@@ -1,0 +1,85 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #020f23;
+}
+.pannels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.pannel{
+     flex:1 ;/*they will get equal available space*/
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     overflow: hidden;
+     cursor: pointer;
+     transition: all .6s;
+     font-family: 'Tektur', sans-serif;
+     color: white;
+}
+.pannel.open{
+    flex: 2;
+    font-size: 1.5rem;
+}
+.pannel >*{
+    flex:auto;
+
+}
+.pannel>:first-child{
+    transform: translateY(-100%);
+    transition: all 0.6s;
+}
+.pannel>:last-child{
+    transform: translateY(100%);
+    transition: all 0.6s;
+}
+.pannel.active>:first-child{
+    transform: translateY(0);
+}
+.pannel.active>:last-child{
+    transform: translateY(0);
+}
+.pannel:nth-child(1){
+  background-image: url("https://images.unsplash.com/photo-1705779234979-9ae065659e99?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat ;
+  
+ }
+.pannel:nth-child(2){
+  background-image: url("https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat ;
+  
+ }
+.pannel:nth-child(3){
+  background-image: url("https://images.unsplash.com/photo-1574068467946-533eea9838ce?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat ;
+  
+ }
+.pannel:nth-child(4){
+  background-image: url("https://media.istockphoto.com/id/1448865561/photo/male-freelancer-making-new-project-as-web-designer-or-programmer-on-his-computer-at-home.jpg?s=1024x1024&w=is&k=20&c=aL8tijCTYgFM8csJSPgk-3CgYWINpAgCa6SkvVHtEoA=");
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat ;
+  
+ }
